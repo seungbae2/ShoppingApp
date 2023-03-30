@@ -13,9 +13,17 @@ object ViewHolderGenerator {
         viewType : Int
     ) : BindingViewHolder<*> {
         return when(viewType) {
+            // parent item
             ViewType.VIEW_PAGER.ordinal -> ViewPagerViewHolder(parent.toBinding())
             ViewType.HORIZONTAL.ordinal -> HorizontalViewHolder(parent.toBinding())
             ViewType.FULL_AD.ordinal -> FullAdViewHolder(parent.toBinding())
+
+            // child item
+            ViewType.COUPON.ordinal -> CouponViewHolder(parent.toBinding())
+            ViewType.IMAGE.ordinal -> ImageViewHolder(parent.toBinding())
+            ViewType.SELL_ITEM.ordinal -> SellItemViewHolder(parent.toBinding())
+            ViewType.SALE.ordinal -> SaleViewHolder(parent.toBinding())
+
             else -> ItemViewHolder(parent.toBinding())
         }
     }

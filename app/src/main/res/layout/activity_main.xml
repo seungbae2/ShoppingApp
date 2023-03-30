@@ -40,28 +40,28 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_baseline_shopping_bag_24"/>
+                        app:srcCompat="@drawable/ic_baseline_shopping_bag_24" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
+                        android:background="@drawable/rectangle_stroke_r5"
                         android:drawableStart="@drawable/ic_baseline_search_24"
                         android:drawablePadding="16dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
                         android:text="상품을 검색해 보세요!"
-                        android:background="@drawable/rectangle_stroke_r5"
                         android:textColor="@color/black"
                         android:textStyle="bold"
-                        android:gravity="center_vertical"
-                        android:paddingBottom="8dp"
-                        android:paddingTop="8dp"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp"/>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -74,6 +74,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
