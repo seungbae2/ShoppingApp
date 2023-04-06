@@ -1,4 +1,4 @@
-package com.example.shoppingapp
+package com.example.shoppingapp.remote
 
 import com.example.shoppingapp.model.NetworkResponse
 import retrofit2.http.GET
